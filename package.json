@@ -1,0 +1,40 @@
+{
+  "name": "huskytest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekeshwar810/huskytest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tekeshwar810/huskytest/issues"
+  },
+  "homepage": "https://github.com/tekeshwar810/huskytest#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "eslint --fix",
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  }
+}
