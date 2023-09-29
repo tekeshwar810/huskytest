@@ -19,11 +19,7 @@
     "url": "https://github.com/tekeshwar810/huskytest/issues"
   },
   "homepage": "https://github.com/tekeshwar810/huskytest#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+
   "lint-staged": {
     "*.{js,json,css,md}": [
       "prettier --single-quote --write",
