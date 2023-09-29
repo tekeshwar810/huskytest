@@ -1,12 +1,19 @@
-const express =   
-
-require('express')
-
-const app       
+const express = 
 
 
-= express()
+require('express');
 
-app.listen(3001,()=>{
-    console.log('server is listen port 3001')
-})
+
+
+
+const app = 
+
+
+
+
+
+express();
+
+app.listen(3001, () => {
+  console.log('server is listen port 3001');
+});
